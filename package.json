@@ -1,0 +1,23 @@
+{
+  "name": "gulp-seajs-config-map",
+  "version": "1.0.0",
+  "description": "gulp seajs rev to config map",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-util": "^3.0.0",
+    "through2": "^0.6.1",
+    "vinyl-file": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "seajs",
+    "config",
+    "map"
+  ],
+  "author": "abel",
+  "license": "MIT"
+}
