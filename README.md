@@ -1,4 +1,4 @@
-##Note
+## Note
 在seajs配置文件后追加配置，让seajs知道静态资源编译后的路径。
 ```
 seajs.config({map:[
@@ -8,12 +8,12 @@ seajs.config({map:[
 ```
 追加配置后，重新对seajs配置文件签名哈希，并更新到manifest流中。
 
-##Install
+## Install
 ```
 npm install --save-dev gulp-seajs-config-map
 ```
 
-##Usage
+## Usage
 ```
 var gulp = require('gulp');
 var rev = require('gulp-rev'),
@@ -29,10 +29,10 @@ gulp.task('build', function() {
 });
 ```
 
-##Options
+## Options
 ```
 configFile: 需要追加seajs配置的文件相对路径，相对于manifest文件的路径。
 ```
 
-##Licence
+## Licence
 MIT
