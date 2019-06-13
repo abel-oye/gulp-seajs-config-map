@@ -1,6 +1,6 @@
 {
   "name": "gulp-seajs-config-map",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "gulp seajs rev to config map",
   "main": "index.js",
   "repository": "https://github.com/river-lee/gulp-seajs-config-map.git",

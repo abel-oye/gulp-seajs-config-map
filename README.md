@@ -22,17 +22,29 @@ var seajsRev = require('gulp-seajs-config-map');
 gulp.task('build', function() {
     return gulp.src('./testfiles/*.js', {base:'./testfiles'})
         .pipe(rev())
-        .pipe(gulp.dest(./dist))
+        .pipe(gulp.dest('./dist)'')
         .pipe(rev.manifest())
-        .pipe(seajsRev({configFile:'dist/js/sea-config.js'}))
+        .pipe(seajsRev({ base:'dist/js', configFile:'sea-config.js'}))
         .pipe(gulp.dest(./dist));
 });
 ```
 
 ## Options
+
+### configFile 需要追加seajs配置的文件名称，如果配置文件没有被排除也会被md5的话，优先会从manifest的映射中查找
 ```
-configFile: 需要追加seajs配置的文件相对路径，相对于manifest文件的路径。
+	manifest = {
+		'sea-config.js':'sea-config-7h22d2.js'
+	}
+
+	output:
+
+	sea-config-7h22d2.js
+
+	
 ```
+
+### base  配置文件基础路径
 
 ## Licence
 MIT

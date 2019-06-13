@@ -68,7 +68,7 @@ var plugin = function(options) {
 		var hash = md5(seajsConfig).slice(0, 8);
 		var ext = path.extname(seajsConfigPath);
 		//var filename = path.basename(seajsConfigPath, ext) + '-' + hash + ext;
-		var filename = manifest[options.configFile]//path.basename(seajsConfigPath, ext) + ext;
+		var filename = manifest[options.configFile] || path.basename(seajsConfigPath, ext) + ext;
 
 		var opts = {
 			path: filename,
